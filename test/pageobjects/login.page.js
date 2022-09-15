@@ -8,15 +8,15 @@ class LoginPage {
      * define selectors using getter methods
      */
     get inputUsername () {
-        return $('#main-focus-area');
+        return $('#user_session_username');
     }
 
     get inputPassword () {
-        return $('#login-pass');
+        return $('#user_session_password');
     }
 
     get btnSubmit () {
-        return $('[data-tid=button-login]');
+        return $('input[type="submit"]');
     }
 
     async login (username, password) {
