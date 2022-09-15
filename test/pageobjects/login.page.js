@@ -8,7 +8,7 @@ class LoginPage {
      * define selectors using getter methods
      */
     get inputUsername () {
-        return $('#main-focus-area');
+        return $('#user_session_username');
     }
     get inputUsername1 () {
         return $('[data-tid="text-logintitle"]');
