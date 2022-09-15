@@ -24,7 +24,7 @@ class LoginPage {
 
     async login (username, password) {
         console.log(username)
-        await this.inputUsername1.waitForDisplayed({ timeout: 50000 });
+        await this.inputUsername.waitForDisplayed({ timeout: 50000 });
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
