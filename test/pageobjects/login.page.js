@@ -29,6 +29,7 @@ class LoginPage {
      * overwrite specific options to adapt it to page object
      */
     open (path) {
+        console.log(path)
         return browser.url(path)
     }
 }
