@@ -16,7 +16,7 @@ class LoginPage {
     }
 
     get btnSubmit () {
-        return $('input[type="submit"]');
+        return $('[data-tid=button-login]');
     }
 
     async login (username, password) {
