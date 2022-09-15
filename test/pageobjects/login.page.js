@@ -20,6 +20,7 @@ class LoginPage {
     }
 
     async login (username, password) {
+        console.log(username)
         await this.inputUsername.waitForDisplayed({ timeout: 50000 });
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
@@ -29,9 +30,9 @@ class LoginPage {
     /**
      * overwrite specific options to adapt it to page object
      */
-    open (path) {
-        console.log(path)
-        return browser.url(path)
+     async  open (path) {
+        await console.log(path)
+        return await browser.url(path)
     }
 }
 
