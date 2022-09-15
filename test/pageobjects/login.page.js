@@ -20,6 +20,7 @@ class LoginPage {
     }
 
     async login (username, password) {
+        await this.inputUsername.waitForDisplayed({ timeout: 10000 });
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
