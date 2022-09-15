@@ -10,12 +10,9 @@ class LoginPage {
     get inputUsername () {
         return $('#main-focus-area');
     }
-    get inputUsername1 () {
-        return $('[data-tid="text-logintitle"]');
-    }
 
     get inputPassword () {
-        return $('#user_session_password');
+        return $('#login-pass');
     }
 
     get btnSubmit () {
