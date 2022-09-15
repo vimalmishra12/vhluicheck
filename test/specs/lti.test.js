@@ -7,6 +7,7 @@ describe('VHl Reader', () => {
         testdata = await fs.readFileSync('./testdata/' + argv.env + '.json')
         testjson = JSON.parse(testdata)
         await LoginPage.open(testjson.readerurl);
+        browser.pause(10000)
         await LoginPage.login(argv.userName, argv.password);
         await expect(HeaderPage.headerPage).toBeExisting();
     });

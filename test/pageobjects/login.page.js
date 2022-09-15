@@ -10,6 +10,9 @@ class LoginPage {
     get inputUsername () {
         return $('#user_session_username');
     }
+    get inputUsername1 () {
+        return $('#login-head');
+    }
 
     get inputPassword () {
         return $('#user_session_password');
@@ -21,7 +24,7 @@ class LoginPage {
 
     async login (username, password) {
         console.log(username)
-        await this.inputUsername.waitForDisplayed({ timeout: 50000 });
+        await this.inputUsername1.waitForDisplayed({ timeout: 50000 });
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
         await this.btnSubmit.click();
@@ -32,7 +35,10 @@ class LoginPage {
      */
      async  open (path) {
         await console.log(path)
-        return await browser.url(path)
+      
+         await browser.url(path)
+         await browser.pause(50000)
+        
     }
 }
 
