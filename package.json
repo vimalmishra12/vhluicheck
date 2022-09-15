@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.conf.js"
+    "test": "npx wdio wdio.conf.js  --env=qa --password=comprovhl1 --userName='ramanjit.singh@comprotechnologies.com'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^7.24.0"
+    "@wdio/cli": "7.24.0"
   },
   "devDependencies": {
     "@wdio/local-runner": "^7.24.0",
+    "@wdio/cli": "7.24.0",
     "@wdio/mocha-framework": "^7.24.0",
     "@wdio/spec-reporter": "^7.24.0",
     "chromedriver": "102.0.0",
