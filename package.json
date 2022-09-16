@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio wdio.conf.js"
+    "test": "npx wdio wdio.conf.js --env=qa --password=comprovhl1 --userName=ramanjit.singh@comprotechnologies.com"
+    
   },
   "author": "",
   "license": "ISC",
